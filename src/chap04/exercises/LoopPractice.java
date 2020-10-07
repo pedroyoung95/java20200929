@@ -86,9 +86,11 @@ public class LoopPractice {
 		}
 		System.out.println("---------------");
 		
-		for(int i=0; i<5; i++) {
-			for(int j=0; j<5; j++) {
-				
+		int k=0;
+		for(int i=0; i<5; i++) {			
+			for(int j=0; j<=i; j++) {
+				System.out.print(k%10);
+				k++;
 			}
 			System.out.println();
 		}
