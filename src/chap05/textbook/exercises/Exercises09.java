@@ -19,16 +19,14 @@ public class Exercises09 {
 			
 			if(selectNo == 1) {
 				System.out.print("학생수>");
-				int num1 = scanner.nextInt();
-				studentNum += num1;
+				studentNum = scanner.nextInt();				 
 				scores = new int[studentNum];
 				System.out.println();
 				
 			} else if(selectNo == 2) {
 				for(int i=0; i<scores.length; i++) {
 					System.out.print("scores["+ i + "]>");
-					int num2 = scanner.nextInt();
-					scores[i] += num2;					
+					scores[i] += scanner.nextInt();					 					
 				}
 				System.out.println();
 				
