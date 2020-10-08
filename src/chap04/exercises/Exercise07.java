@@ -54,6 +54,30 @@ public class Exercise07 {
 				run=false;
 				System.out.println();
 				System.out.println("프로그램 종료");
+				
+/*			switch 문으로 줄일 수 있음
+			switch(line) {
+				case "1":
+					System.out.println("예금액>");
+					String money1 = scanner.nextLine();
+					int num1 = Integer.valueOf(money1);
+					balance+=num1;
+					System.out.println();
+				case "2":
+					System.out.println("출금액>");
+					String money2 = scanner.nextLine();
+					int num2 = Integer.valueOf(money2);
+					balance-=num2;
+					System.out.println();
+				case "3":
+					System.out.println("잔고>"+balance);
+					break;
+				case "4":
+					run=false;
+					break;					
+			}
+			System.out.println("프로그램 종료");  */
+				
 			}
 		}
 	}
