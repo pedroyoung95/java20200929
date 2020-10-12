@@ -10,7 +10,7 @@ public class CharExample {
 		char c5 = 44032;
 		char c6 = '\uac00';
 		
-		char c7 = '♥' // emoji도 문자로 취급
+		char c7 = '♥' // emoji도 문자 취급
 		
 		
 		int uniCode = c1; //유니코드 얻기
