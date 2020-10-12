@@ -10,15 +10,15 @@ public class Exercises08 {
 		
 		int sum = 0;
 		double avg = 0.0;
-		int all = 0;
+		int cnt = 0;
 		
 		for(int i = 0; i<array.length; i++) {
 			for(int j = 0; j<array[i].length; j++) {
 				sum +=array[i][j];
 			}
-			all += array[i].length;
+			cnt += array[i].length;
 		}
-		avg = (double) sum / all;
+		avg = (double) sum / cnt;
 			
 		
 		System.out.println("sum: " + sum);
