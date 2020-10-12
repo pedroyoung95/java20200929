@@ -14,6 +14,9 @@ public class Car {
 	
 	Car(String model) {
 		this(model, "은색", 250);
+//this() -> 클래스의 다른 생성자 호출
+//괄호 안 변수 타입이나 값이 맞는 다른 생성자를 호출
+//호출된 생성자의 실행코드를 똑같이 실행할 수 있게 됨
 	}
 	
 	Car(String model, String color) {
