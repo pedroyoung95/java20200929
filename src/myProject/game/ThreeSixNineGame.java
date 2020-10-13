@@ -10,6 +10,7 @@ public class ThreeSixNineGame {
 		boolean run = true;
 		int score = 1;
 		
+		
 		while(run) {
 			System.out.println("-------------------------");
 			System.out.println("1.숫자 외치기 | 2.박수 | 5.종료");
@@ -19,15 +20,21 @@ public class ThreeSixNineGame {
 			int selectNo = scanner.nextInt();
 			
 			if(selectNo == 1 || selectNo == 2) {
-				score++;
+				if(selectNo==1 && score%3==0) {
+					run=false;
+				} else if(selectNo==2 && score%3!=0) {
+					run=false;
+				}
+				score++;				
 			}
 			
 			if(selectNo == 5) {
-				run==false;
-				
+				run=false;				
 			}
+			
 		}
-		System.out.println("마지막 숫자 : " + score);
+		int lastscore = score - 1;
+		System.out.println("마지막 숫자 : " + lastscore);
 		System.out.println("게임 종료");
 		
 	}
