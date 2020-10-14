@@ -1,4 +1,4 @@
-package chap06.lecture.staticKeywork;
+package chap06.lecture.staticKeyword;
 
 public class MyClass {
 	static int var2;

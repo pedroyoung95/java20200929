@@ -11,6 +11,8 @@ public class Car {
 	
 	static void run() {
 		System.out.println(speed + "으로 달립니다.");
+//out은 객체 생성 없이 호출 가능하므로
+//System 클래스의 멤버임 
 	}
 	
 	
