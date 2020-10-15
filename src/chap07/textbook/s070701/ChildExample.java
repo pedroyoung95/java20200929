@@ -3,6 +3,8 @@ package chap07.textbook.s070701;
 public class ChildExample {
 	public static void main(String[] args) {
 		Child child = new Child();
+//		Parent parent = new Parent();
+//		child = parent;
 		
 		Parent parent = child;
 		parent.method1();
