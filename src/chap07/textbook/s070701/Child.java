@@ -1,6 +1,10 @@
 package chap07.textbook.s070701;
 
 public class Child extends Parent{
+	int age;
+	
+	public Child() {}
+	
 	@Override
 	public void method2() {
 		System.out.println("Child-method2()");
