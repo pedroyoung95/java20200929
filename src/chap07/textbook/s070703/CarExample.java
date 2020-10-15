@@ -1,6 +1,6 @@
 package chap07.textbook.s070703;
 
-import chap07.textbook.s070702.*;
+import chap07.textbook.s070702.HankookTire;
 
 public class CarExample {
 	public static void main(String[] args) {
