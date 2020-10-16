@@ -19,9 +19,13 @@ public class InstanceofExample {
 		Parent parentA = new Child();
 		method1(parentA);
 		method2(parentA);
+//parentA변수는 Child타입의 인스턴스를 할당받았으므로
+//method1,2 모두에서 변환 성공
 		
 		Parent parentB = new Parent();
 		method1(parentB);
 		method2(parentB);
+//parentB변수는 Parent타입의 인스턴스를 할당받았으므로
+//method1,2 모두에서 변환 실패
 	}
 }
