@@ -3,7 +3,7 @@ package chap06.lecture.encapsulation;
 public class Car {
 	private int speed;
 	private String model;
-	privte String name;
+	private String name;
 	private int price;
 //데이터는 private로 외부 접근 차단
 	
@@ -21,9 +21,6 @@ public class Car {
 //읽기 전용의 get 메소드
 //정보를 읽어오고 가공도 get 메소드의 역할
 
-	
-//상단 바에 Source -> Generate getter and setter클릭
-//자동으로 get, set method 생성
 	public String getModel() {
 		return model;
 	}
@@ -32,12 +29,12 @@ public class Car {
 		this.model = model;
 	}
 
-	public privte getString() {
-		return String;
+	public String getName() {
+		return name;
 	}
 
-	public void setString(privte string) {
-		String = string;
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public int getPrice() {
@@ -47,6 +44,11 @@ public class Car {
 	public void setPrice(int price) {
 		this.price = price;
 	}
+
+	
+//상단 바에 Source -> Generate getter and setter클릭
+//자동으로 get, set method 생성
+	
 	
 	
 }

@@ -31,7 +31,7 @@ public class Exercises {
 		
 		int intValue = byteValue;
 		int intValue1 = charValue;
-		short shortValue = charValue;
+//		short shortValue = charValue;
 		double doubleValue = byteValue;
 		
 		//6번 문제
@@ -43,7 +43,7 @@ public class Exercises {
 		double var = (double)intValue2;
 		byte var1 = (byte)intValue2;
 		int var2 = (int)doubleValue;
-		char var3 = (char)strValue; //참조타입은 기본타입과 형변환 불가
+//		char var3 = (char)strValue; //참조타입은 기본타입과 형변환 불가
 		
 		//7번 문제
 //		char var4 = ''; -> char 타입은 공백포함 아무 글자라도 가져야 함
@@ -53,7 +53,7 @@ public class Exercises {
 		float floatValue = 2.5F;
 		double doubleValue2 = 2.5;
 		
-		byte result = byteValue1 + byteValue1; // 정수결과값은 int로 저장
+//		byte result = byteValue1 + byteValue1; // 정수결과값은 int로 저장
 		int result1 = byteValue1 + byteValue1;
 	}
 }
