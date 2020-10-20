@@ -32,7 +32,7 @@ public class AutoCloseEx1 {
 		}
 		//new version
 		//try-with-resources
-		//jvm이 알아서 fis2가 null체크하고, 예외도 잡고, close 해줌
+		//jvm이 알아서 fis2가 null체크하고, 예외도 잡고, close 해줌 
 		try(
 			FileInputStream fis2 = new FileInputStream("file.txt");
 			FileInputStream fis3 = new FileInputStream("file2.txt")
