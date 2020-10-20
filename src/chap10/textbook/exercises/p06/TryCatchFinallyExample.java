@@ -16,7 +16,8 @@ public class TryCatchFinallyExample {
 			} finally {
 				System.out.println(value);
 //i=0일 때 value에 10이 할당되었고, finally의 실행문이기 때문에
-//for반복될때마다 10이 찍혀나옴.
+//value에 새로운 값이 할당되지 않는 이상 value는 10이고
+//반복될때마다 10이 찍혀나옴.
 			}
 		}
 	}
