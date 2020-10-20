@@ -5,7 +5,7 @@ public class Chatting {
 		String nickName = chatId;
 //익명 객체는 로컬클래스처럼 한 번 사용하고 사라지기 때문에
 //지역 변수, parameter가 명시적, 암묵적으로 final이여야 함.
-//		nickName = chatId;
+//		nickName = chatId; -> 지역변수는 final이기 때문에 재 할당X
 		Chat chat = new Chat() {
 			@Override
 			public void start() {
