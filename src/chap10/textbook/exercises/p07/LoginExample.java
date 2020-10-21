@@ -28,6 +28,8 @@ public class LoginExample {
 		if(!password.equals("12345")) {
 			throw new WrongPasswordException("패스워드가 틀립니다.");
 		}
-//throws Exception이므로 두 종류의 예외를 모두 떠넘길 수 있음.
+//new 연산자 다음은 예외 클래스의 인스턴스 생성,
+//즉 예외 생성이므로, throw 키워드가 붙어야 함 
 	}
+//throws Exception이므로 두 종류의 예외를 모두 떠넘길 수 있음.
 }
