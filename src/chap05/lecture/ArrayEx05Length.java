@@ -1,4 +1,4 @@
-package chap05;
+package chap05.lecture;
 
 public class ArrayEx05Length {
 	public static void main(String[] args) {
