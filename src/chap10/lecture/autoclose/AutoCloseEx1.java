@@ -16,6 +16,7 @@ public class AutoCloseEx1 {
 		} catch (FileNotFoundException e) {
 //파일을 찾을 수 없을 때 발생하는 예외를 잡는 catch블럭
 			e.printStackTrace();
+//printStackTrace(): 예외 발생 코드를 추적해서 콘솔에 출력
 		} finally {
 			if(fis != null) {
 //파일의 참조값을 담은 FileInputStream 타입 변수의 값이 null이 아닐 때
