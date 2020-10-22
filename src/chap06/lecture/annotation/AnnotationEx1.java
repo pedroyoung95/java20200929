@@ -4,7 +4,7 @@ package chap06.lecture.annotation;
 //클래스, 필드, 메소드 등에 붙일 수 있음
 //@Override는 메소드에만 붙일 수 있은 annotation
 public class AnnotationEx1 {
-	@MyAnnotation
+	@MyAnnotation("abc")
 	private int i;
 	//주석들...
 	
