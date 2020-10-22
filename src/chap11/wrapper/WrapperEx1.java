@@ -22,8 +22,8 @@ public class WrapperEx1 {
 		int j = 2;
 		method1(j);
 		
-		int l = in.intValue();
-		int k = in;
+		int l = in.intValue(); //메소드를 이용해 수동으로 unboxing
+		int k = in; //자동으로 unboxing
 		
 		Integer in2 = 3;
 		int m = in2;
