@@ -6,15 +6,12 @@ public class ClassClass {
 	public static void main(String[] args) throws Exception {
 		//Class 객체 얻는 방법
 		
-		//1.문자열로 얻음
-		Class clazz;
-		clazz = Class.forName("java.lang.String");
-		
+		//1.문자열(클래스 이름)로 얻음
+		Class clazz = Class.forName("java.lang.String");		
 		
 		//2.객체로부터 얻음
 		String s = "java";
-		Class c2 = s.getClass();
-		
+		Class c2 = s.getClass();		
 		System.out.println(clazz == c2);
 		
 		//3.class 키워드로 얻음
