@@ -1,4 +1,4 @@
-package chap13.lecture.s130301;
+package chap13.textbook.s130301;
 
 class Tv {}
 class Car {}

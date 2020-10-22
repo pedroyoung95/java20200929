@@ -1,4 +1,4 @@
-package chap13.lecture.s130301;
+package chap13.textbook.s130301;
 
 public class Product<T, M> {
 	//멀티 타입 파라미터 가능. comma로 나열
