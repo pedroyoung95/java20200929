@@ -6,12 +6,13 @@ import java.lang.reflect.Method;
 
 public class ReflectionExample {
 	public static void main(String[] args) throws Exception {
-		Class clazz = Class.forName("chap08.textbook.s080301.Audio");
+		Class clazz = Class.forName("java.lang.Exception");
 		
 		System.out.println("[클래스 이름]");
 		System.out.println(clazz.getName());
 		System.out.println();
 		
+//getDeclared + '생성자/필드/메소드' 형태의 메소드
 		System.out.println("[생성자 정보]");
 		Constructor[] constructors = clazz.getDeclaredConstructors();
 		for(Constructor constructor : constructors) {
