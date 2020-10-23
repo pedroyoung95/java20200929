@@ -33,10 +33,12 @@ public class WildCardExample {
 		registerCourse(workerCourse);
 		registerCourse(studentCourse);
 		registerCourse(highStudentCourse);
+//registerCourse는 제네럴 타입에 제한이 없으므로, 모든 인스턴스를 받을 수 있음
 		System.out.println();
 		
 //		registerCourseStudent(personCourse);
 //		registerCourseStudent(workerCourse);
+//registerCourseStudent는 Student클래스와 그 하위클래스로 제한되어서, Person과 Worker타입은 불가
 		registerCourseStudent(studentCourse);
 		registerCourseStudent(highStudentCourse);
 		System.out.println();
@@ -45,5 +47,6 @@ public class WildCardExample {
 		registerCourseWorker(workerCourse);
 //		registerCourseWorker(studentCourse);
 //		registerCourseWorker(highStudentCourse);
+//registerCourseWorker는 Worker클래스와 그 상위클래스로 제한되어서, Student포함 그 이하 타입은 불가
 	}
 }
