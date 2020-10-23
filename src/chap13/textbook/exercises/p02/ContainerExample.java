@@ -9,5 +9,8 @@ public class ContainerExample {
 		Container<Integer> container2 = new Container<Integer>();
 		container2.set(6);
 		int value = container2.get();
+		
+		System.out.println(str);
+		System.out.println(value);
 	}
 }
