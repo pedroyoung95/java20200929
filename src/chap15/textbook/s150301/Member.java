@@ -23,4 +23,5 @@ public class Member {
 	public int hashCode() {
 		return name.hashCode() + age;
 	}
+//set에 추가할 객체의 필드값이 같은 걸 같다고 인식하기 위해 hashCode와 equals메소드를 재정의함
 }

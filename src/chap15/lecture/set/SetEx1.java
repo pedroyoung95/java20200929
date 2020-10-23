@@ -1,4 +1,4 @@
-package chap15.set;
+package chap15.lecture.set;
 
 import java.util.HashSet;
 import java.util.Iterator;
