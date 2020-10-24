@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 import chap06.textbook.exercises.p20.Account;
 
-public class BankApplication {
+public class BankApplicationByList {
 	static List<Account> accountList = new ArrayList<>();
 	private static Scanner scanner = new Scanner(System.in);
 	
@@ -27,10 +27,11 @@ public class BankApplication {
 				String accountNo = scanner.next();
 				System.out.print("계좌주: ");
 				String accountOwner = scanner.next();
-				System.out.println("초기입금액: ");
+				System.out.print("초기입금액: ");
 				int firstDeposit = scanner.nextInt();
 				
-				accountList.add(new Account(accountNo, accountOwner, firstDeposit));
+				Account account = new Account(accountNo, accountOwner, firstDeposit);
+				accountList.add(account);						
 				
 				System.out.println("계좌가 생성되었습니다.");
 			}
