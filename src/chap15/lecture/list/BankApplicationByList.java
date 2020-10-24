@@ -31,8 +31,7 @@ public class BankApplicationByList {
 				int firstDeposit = scanner.nextInt();
 				
 				Account account = new Account(accountNo, accountOwner, firstDeposit);
-				accountList.add(account);						
-				
+				accountList.add(account);					
 				System.out.println("계좌가 생성되었습니다.");
 			}
 			
@@ -76,6 +75,7 @@ public class BankApplicationByList {
 		}
 		System.out.println("프로그램을 종료합니다.");
 	}
+	
 	public static Account findAccount(String ano) {
 		for(int i = 0; i < accountList.size(); i++) {
 			if(accountList.get(i).getAno().equals(ano)) {
@@ -83,6 +83,18 @@ public class BankApplicationByList {
 			}
 		}
 		return null;
+	}
+	
+	@Override
+	public int hashCode() {
+		// TODO Auto-generated method stub
+		return super.hashCode();
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		// TODO Auto-generated method stub
+		return super.equals(obj);
 	}
 	
 }

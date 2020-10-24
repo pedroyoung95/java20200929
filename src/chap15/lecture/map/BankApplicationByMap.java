@@ -34,18 +34,8 @@ public class BankApplicationByMap {
 				int firstDeposit = scanner.nextInt();
 				System.out.print("계좌비밀번호: ");
 				String password = scanner.next();
-				Set<String> passwordSet = accountMap.keySet(); 
-				for(String passwordKey : passwordSet) {
-					if(password.equals(passwordKey)) {
-						System.out.println("사용할 수 없는 패스워드 입니다.");
-						password = null;
-					}
-				}
-				System.out.print("계좌비밀번호: ");
-				password = scanner.next();
 				
-				accountMap.put(password, new Account(acn, owener, firstDeposit));
-				
+				accountMap.put(password, new Account(acn, owener, firstDeposit));				
 				System.out.println("계좌생성이 완료되었습니다.");
 			}
 			if (selectNo == 2) {
