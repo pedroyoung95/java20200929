@@ -37,12 +37,21 @@ public class StreamExample {
 		// 작성위치
 		List<String> developerName = new ArrayList<String>();
 		List<String> designerName = new ArrayList<String>();
-		for(int i = 0; i <list.size(); i++) {
-			if(list.get(i).getJob().equals("개발자")) {
-				developerName.add(list.get(i).getName());
+//		for(int i = 0; i <list.size(); i++) {
+//			if(list.get(i).getJob().equals("개발자")) {
+//				developerName.add(list.get(i).getName());
+//				groupingMap.put("개발자", developerName);
+//			} else if(list.get(i).getJob().equals("디자이너")) {
+//				designerName.add(list.get(i).getName());
+//				groupingMap.put("디자이너", designerName);
+//			}
+//		}		
+		for(Member member : list) {
+			if(member.getJob().equals("개발자")) {
+				developerName.add(member.getName());
 				groupingMap.put("개발자", developerName);
-			} else if(list.get(i).getJob().equals("디자이너")) {
-				designerName.add(list.get(i).getName());
+			} else if(member.getJob().equals("디자이너")) {
+				designerName.add(member.getName());
 				groupingMap.put("디자이너", designerName);
 			}
 		}
