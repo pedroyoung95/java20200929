@@ -4,6 +4,7 @@ import java.util.*;
 
 public class StackExample {
 	public static void main(String[] args) {
+		//LIFO: Last in First out
 		Stack<Coin> coinBox = new Stack<Coin>();
 		
 		coinBox.push(new Coin(100));
