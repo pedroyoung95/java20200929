@@ -12,9 +12,10 @@ public class NestedMap {
 		for(int i = 1; i <= 29; i++) {
 			apart105_1_2.put("password"+i+"01", i*100+1);
 		}
-		for(int i = 1; i <= 29; i++) {
+		for(int i = 2; i <= 29; i++) {
 			apart105_1_2.put("password"+i+"02", i*100+2);
 		}
+		System.out.println(apart105_1_2.size());
 		
 		Map<String, Integer> apart105_3_4 = new HashMap<>();
 //		apart105_3_4.put("password303", 303);
@@ -26,10 +27,12 @@ public class NestedMap {
 		for(int i = 1; i <= 29; i++) {
 			apart105_3_4.put("password"+i+"04", i*100+4);
 		}
+		System.out.println(apart105_3_4.size());
 		
 		Map<String, Map<String, Integer>> superMap = new HashMap<>();
 		superMap.put("apart105_1_2", apart105_1_2);
 		superMap.put("apart105_3_4", apart105_3_4);
+		System.out.println(superMap.size());
 		
 		Map<String, Integer> apart105_1_2Key = superMap.get("apart105_1_2");
 		Integer homeNumOf105_1_2 = apart105_1_2Key.get("password1001");
