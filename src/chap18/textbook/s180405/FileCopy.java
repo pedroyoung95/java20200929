@@ -12,8 +12,9 @@ public class FileCopy {
 		String des = "file-copy.txt";
 		
 		Reader reader = new FileReader(src); //파일을 읽음(그 파일이 존재해야 함)
-		Writer writer = new FileWriter(des, true); //파일을 출력(생성)
-
+		Writer writer = new FileWriter(des); //파일을 출력(생성)
+//		Writer writer = new FileWriter(des, true); -> 실행할때마다 copy파일 뒤에 파일 내용이 붙여짐
+		
 //방법 1. 문자 한 개씩 읽은 걸 int 변수에 담고, 그 int변수를 출력
 //		int rc;		
 //		while((rc=reader.read()) != -1) {
