@@ -6,6 +6,7 @@ import java.io.Writer;
 
 public class WriterEx1 {
 	public static void main(String[] args) throws Exception {
+		
 		String path= "writer.txt";
 		Writer writer = new FileWriter(path);
 		
