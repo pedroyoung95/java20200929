@@ -1,3 +1,4 @@
+//한글
 package chap18.lecture.inputstream;
 
 import java.io.FileInputStream;
