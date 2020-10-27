@@ -1,0 +1,62 @@
+src/chap18/textbook/s180405/FileCopy.javappackage chap18.textbook.s180405;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.Reader;
+import java.io.Writer;
+
+public class FileCopy {
+	public static void main(String[] args) throws Exception {
+		String src = "src/chap18/textbook/s180405/FileCopy.java";
+		String des = "file-copy.txt";
+		
+		Reader reader = new FileReader(src);
+		Writer writer = new FileWriter(des, true);
+		
+		char[] readChar = new char[100];
+		while(reader.read(readChar) != -1) {
+			writer.write(readChar);
+		}
+		
+		
+		
+		reader.close();
+		writer.close();
+	}
+}
+!= -1) {
+			writer.write(readChar);
+		}
+		
+		
+		
+		reader.close();
+		writpackage chap18.textbook.s180405;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.Reader;
+import java.io.Writer;
+
+public class FileCopy {
+	public static void main(String[] args) throws Exception {
+		String src = "src/chap18/textbook/s180405/FileCopy.java";
+		String des = "file-copy.txt";
+		
+		Reader reader = new FileReader(src);
+		Writer writer = new FileWriter(des, true);
+		
+		int rc;
+		char[] readChar = new char[100];
+		while((rc=reader.read()) != -1) {
+			writer.write(rc);
+		}
+		
+		
+		
+		reader.close();
+		writer.close();
+	}
+}
