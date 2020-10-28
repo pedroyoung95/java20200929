@@ -15,10 +15,19 @@ public class BufferedOutputStreamEx {
 		OutputStream os = new FileOutputStream(path2);
 		BufferedOutputStream bos = new BufferedOutputStream(os);
 		
+		long start = System.currentTimeMillis();
+		
 		int readCnt;
 		while((readCnt = is.read()) != -1) {
 			bos.write(readCnt);
 		}
+//		while((readCnt = is.read()) != -1) {
+//			os.write(readCnt);
+//		}
+		
+		long end = System.currentTimeMillis();
+		
+		System.out.println("걸린 시간: " + (end-start) + "ms");
 		bos.close();
 	}
 }

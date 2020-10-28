@@ -11,21 +11,24 @@ public class BufferedWriterEx {
 	public static void main(String[] args) throws Exception {
 		String path1 = "src\\chap18\\lecture\\dataOutputRepeat\\BufferedWriterEx.java";
 		Reader reader = new FileReader(path1);
-		String path2 = "src/chap18/lecture/dataOutputRepeat/BufferedWriterEx_Copy.java";
+		String path2 = "src/chap18/lecture/dataOutputRepeat/BufferedWriterEx_Copy.txt";
 		Writer writer = new FileWriter(path2);
 		BufferedWriter bw = new BufferedWriter(writer);
 		
 		int readCnt;
-		long start = System.currentTimeMillis();
+		
+//		long start = System.currentTimeMillis();
 //		while((readCnt = reader.read()) != -1) {
 //			writer.write(readCnt);
 //		}
-		long end = System.currentTimeMillis();
+//		long end = System.currentTimeMillis();
 //		System.out.println("걸린 시간: " + (end-start) + "ms");
 		
+		long start = System.currentTimeMillis();
 		while((readCnt = reader.read()) != -1) {
 			bw.write(readCnt);
 		}
+		long end = System.currentTimeMillis();
 		System.out.println("걸린 시간: " + (end-start) + "ms");
 		
 		bw.close();

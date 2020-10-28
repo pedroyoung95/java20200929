@@ -11,6 +11,7 @@ public class ServerExample {
 		try {
 			serverSocket = new ServerSocket();
 			serverSocket.bind(new InetSocketAddress("172.30.1.6", 5001));
+//bind(): 컴퓨터에 포트를 여는 메소드
 //InetSocketAddress에 두 번째 매개 값: 포트 번호
 //포트 번호: 컴퓨터에서 실행되는 앱의 주소 역할
 //IP를 통해 컴퓨터에 접근 후, 컴퓨터의 특정 앱에 접근하기 위해 필요
