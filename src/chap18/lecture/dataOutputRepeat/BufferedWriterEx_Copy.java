@@ -22,7 +22,6 @@ public class BufferedWriterEx {
 //		}
 		long end = System.currentTimeMillis();
 //		System.out.println("걸린 시간: " + (end-start) + "ms");
-		
 		while((readCnt = reader.read()) != -1) {
 			bw.write(readCnt);
 		}
