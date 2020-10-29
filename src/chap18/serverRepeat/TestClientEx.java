@@ -9,11 +9,12 @@ import java.net.UnknownHostException;
 
 public class TestClientEx {
 	public static void main(String[] args) throws Exception {
-		Socket socket = new Socket("192.168.0.113", 5001);	
-		String makeFile = "";
+		System.out.println("[연결 시도]");
+		Socket socket = new Socket("localhost", 5001);
+		System.out.println("[연결 성공]");
 		OutputStream os = socket.getOutputStream();
 		
-		String filePath = "C:\\Users\\admin\\Documents\\myworkspace\\eclipse-workspace\\myjava\\Bayern.jpg";
+		String filePath = "C:\\Users\\admin\\Documents\\myworkspace\\eclipse-workspace\\myjava\\Dortmund.jpg";
 		File file = new File(filePath);
 		
 		FileInputStream fis = new FileInputStream(file);
@@ -21,5 +22,8 @@ public class TestClientEx {
 		while((readCnt = fis.read()) != -1) {
 			os.write(readCnt);
 		}
+		fis.close();
+		os.close();
+		socket.close();
 	}
 }

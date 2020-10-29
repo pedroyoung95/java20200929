@@ -16,8 +16,7 @@ public class ServerExample {
 		
 		while(true) {
 			try {
-				Socket socket = serverSocket.accept();
-				
+				Socket socket = serverSocket.accept();				
 				InputStream is = socket.getInputStream();	
 				
 				byte[] bytes = new byte[1000];
@@ -28,13 +27,11 @@ public class ServerExample {
 				
 				fileName = fileName.trim();
 				
-				System.out.println("[파일 받기 시작] " + fileName);
-								
+				System.out.println("[파일 받기 시작] " + fileName);								
 				FileOutputStream fos = new FileOutputStream("C:/Users/admin/Desktop/" + fileName);
 				while((readByteCount = is.read(bytes)) != -1) {
 					fos.write(bytes, 0, readByteCount);
-				}
-				
+				}				
 				System.out.println("[파일 받기 완료]");
 				
 				fos.close();
