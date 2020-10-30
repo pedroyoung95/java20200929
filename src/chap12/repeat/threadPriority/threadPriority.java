@@ -7,10 +7,18 @@ public class threadPriority {
 			threads[i] = new Thread() {
 				@Override
 				public void run() {
-					this.getName();
-					System.out.println("완료");
+					System.out.println(this.getName());
 				}
 			};
+			if(i < 10) {
+				threads[i].setPriority(10);
+			} else {
+				threads[i].setPriority(1);
+			}
+		}
+		
+		for(Thread t : threads) {
+			t.start();
 		}
 	}
 }
