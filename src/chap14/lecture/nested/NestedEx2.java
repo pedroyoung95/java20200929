@@ -10,7 +10,7 @@ public class NestedEx2 {
 			System.out.println(this);
 			System.out.println(outterField); //람다식으로 생성한 클래스의 변수인 outterField를 지칭
 			System.out.println(NestedEx2.this.outterField);
-//바깥 클래스의 변수를 사용하려면 바깥 클래스를 호출해야 함
+//메소드 바깥에 있는 변수를 사용하려면 바깥 클래스를 호출해야 함
 			
 		};
 	}
